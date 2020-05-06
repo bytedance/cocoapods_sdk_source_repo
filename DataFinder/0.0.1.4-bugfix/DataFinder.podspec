@@ -30,6 +30,12 @@ Pod::Spec.new do |s|
 
     s.dependency 'RangersAppLog/Core', '~>5.0.0'
 
+    s.subspec 'Public' do |p|
+        p.vendored_libraries = "DataFinder/libPublic.a"
+        p.dependency 'DataFinder/Core'
+        p.dependency 'DataFinder/Crash'
+    end
+    
     s.subspec 'Core' do |core|
     	core.vendored_libraries = "DataFinder/libCore.a"
     	core.libraries = 'c++','z','sqlite3'
