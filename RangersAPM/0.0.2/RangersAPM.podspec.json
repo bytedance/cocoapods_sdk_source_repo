@@ -23,7 +23,8 @@
         ]
     },
     "pod_target_xcconfig": {
-        "DEFINES_MODULE": "YES"
+        "DEFINES_MODULE": "YES",
+        "OTHER_LDFLAGS": "-lObjC"
     },
     "static_framework": true,
     "subspecs": [
