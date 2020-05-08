@@ -25,6 +25,7 @@
     "pod_target_xcconfig": {
         "DEFINES_MODULE": "YES"
     },
+    "static_framework": true,
     "subspecs": [
         {
             "name": "Public",
