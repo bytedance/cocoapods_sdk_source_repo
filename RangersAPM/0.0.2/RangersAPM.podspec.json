@@ -23,14 +23,13 @@
         ]
     },
     "pod_target_xcconfig": {
-        "DEFINES_MODULE": "YES",
-        "OTHER_LDFLAGS": "-lObjC"
+        "DEFINES_MODULE": "YES"
     },
     "static_framework": true,
     "subspecs": [
         {
             "name": "Public",
-            "source_files": "RangersAPM/Headers/*.h",
+            "source_files": "RangersAPM/Headers/*.{h,m}",
             "public_header_files": "RangersAPM/Headers/*.h",
             "vendored_libraries": "RangersAPM/libPublic.a",
             "dependencies": {
