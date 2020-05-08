@@ -11,7 +11,7 @@
     "platforms": {
         "ios": "8.0"
     },
-    "source_files": "RangersAPM/Headers/*.h",
+    "source_files": "RangersAPM/Headers/*.{h,m}",
     "public_header_files": "RangersAPM/Headers/*.h",
     "frameworks": [
         "UIKit",
