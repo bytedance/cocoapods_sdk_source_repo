@@ -29,6 +29,8 @@
     "subspecs": [
         {
             "name": "Public",
+            "source_files": "RangersAPM/Headers/*.h",
+            "public_header_files": "RangersAPM/Headers/*.h",
             "vendored_libraries": "RangersAPM/libPublic.a",
             "dependencies": {
                 "RangersAPM/Core": [],
