@@ -1,0 +1,58 @@
+{
+    "name": "RangersAPM",
+    "version": "0.0.2",
+    "summary": "RangersAPM by ByteDance",
+    "homepage": "https://apm.bytedance.com",
+    "license": {
+        "type": "MIT",
+        "file": "RangersAPM/LICENSE"
+    },
+    "authors": "ByteDance",
+    "platforms": {
+        "ios": "8.0"
+    },
+    "source_files": "RangersAPM/Headers/*.h",
+    "public_header_files": "RangersAPM/Headers/*.h",
+    "frameworks": [
+        "UIKit",
+        "AdSupport"
+    ],
+    "dependencies": {
+        "RangersAppLog/Core": [
+            ">=5.0.0"
+        ]
+    },
+    "pod_target_xcconfig": {
+        "DEFINES_MODULE": "YES"
+    },
+    "subspecs": [
+        {
+            "name": "Public",
+            "vendored_libraries": "RangersAPM/libPublic.a",
+            "dependencies": {
+                "RangersAPM/Core": [],
+                "RangersAPM/Crash": []
+            }
+        },
+        {
+            "name": "Core",
+            "vendored_libraries": "RangersAPM/libCore.a",
+            "libraries": [
+                "c++",
+                "z",
+                "sqlite3"
+            ]
+        },
+        {
+            "name": "Crash",
+            "vendored_libraries": "RangersAPM/libCrash.a",
+            "dependencies": {
+                "RangersAPM/Core": []
+            },
+            "libraries": "c++abi"
+        }
+    ],
+    "source": {
+        "http": "https://lf1-ttcdn-tos.pstatp.com/obj/heimdallr/RangersAPM/0.0.2/RangersAPM.zip"
+    }
+}
