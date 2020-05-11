@@ -26,11 +26,10 @@
     "user_target_xcconfig": {
         "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
     },
-    "static_framework": true,
     "subspecs": [
         {
             "name": "Public",
-            "source_files": "RangersAPM/Public/**/*.{h}",
+            "source_files": "RangersAPM/Public/**/*.h",
             "public_header_files": "RangersAPM/Public/**/*.h",
             "vendored_libraries": "RangersAPM/Public/**/*.a",
             "dependencies": {
