@@ -28,58 +28,58 @@ Pod::Spec.new do |s|
     bd.public_header_files = 'RangersAppLog/Classes/Core/*.h'
   end
 
-  # s.subspec 'Host' do |bd|
-  #   bd.dependency 'RangersAppLog/Core'
-  #   bd.subspec 'CN' do |cn|
-  #     cn.source_files = 'RangersAppLog/Classes/Host/CN/*.{h,m,c}'
-  #     cn.public_header_files = 'RangersAppLog/Classes/Host/CN/*.h'
-  #     cn.vendored_library = 'RangersAppLog/Classes/Host/CN/*.a'
-  #   end
-  #   bd.subspec 'SG' do |sg|
-  #     sg.source_files = 'RangersAppLog/Classes/Host/SG/*.{h,m,c}'
-  #     sg.public_header_files = 'RangersAppLog/Classes/Host/SG/*.h'
-  #     sg.vendored_library = 'RangersAppLog/Classes/Host/SG/*.a'
-  #   end
-  #   bd.subspec 'VA' do |va|
-  #     va.source_files = 'RangersAppLog/Classes/Host/VA/*.{h,m,c}'
-  #     va.public_header_files = 'RangersAppLog/Classes/Host/VA/*.h'
-  #     va.vendored_library = 'RangersAppLog/Classes/Host/VA/*.a'
-  #   end
-  # end
+  s.subspec 'Host' do |bd|
+    bd.dependency 'RangersAppLog/Core'
+    bd.subspec 'CN' do |cn|
+      cn.source_files = 'RangersAppLog/Classes/Host/CN/*.{h,m,c}'
+      cn.public_header_files = 'RangersAppLog/Classes/Host/CN/*.h'
+      cn.vendored_library = 'RangersAppLog/Classes/Host/CN/*.a'
+    end
+    bd.subspec 'SG' do |sg|
+      sg.source_files = 'RangersAppLog/Classes/Host/SG/*.{h,m,c}'
+      sg.public_header_files = 'RangersAppLog/Classes/Host/SG/*.h'
+      sg.vendored_library = 'RangersAppLog/Classes/Host/SG/*.a'
+    end
+    bd.subspec 'VA' do |va|
+      va.source_files = 'RangersAppLog/Classes/Host/VA/*.{h,m,c}'
+      va.public_header_files = 'RangersAppLog/Classes/Host/VA/*.h'
+      va.vendored_library = 'RangersAppLog/Classes/Host/VA/*.a'
+    end
+  end
 
-  # s.subspec 'Log' do |bd|
-  #   bd.vendored_library = 'RangersAppLog/Classes/Log/*.a'
-  #   bd.dependency 'RangersAppLog/Core'
-  # end
+  s.subspec 'Log' do |bd|
+    bd.vendored_library = 'RangersAppLog/Classes/Log/*.a'
+    bd.dependency 'RangersAppLog/Core'
+  end
 
-  # s.subspec 'Unique' do |bd|
-  #   bd.frameworks = 'AdSupport' #, 'AppTrackingTransparency'
-  #   bd.dependency 'RangersAppLog/Core'
-  #   bd.source_files = 'RangersAppLog/Classes/Unique/*.{h,m,c}'
-  #   bd.public_header_files = 'RangersAppLog/Classes/Unique/*.h'
-  #   bd.vendored_library = 'RangersAppLog/Classes/Unique/*.a'
-  # end
+  s.subspec 'Unique' do |bd|
+    bd.frameworks = 'AdSupport' #, 'AppTrackingTransparency'
+    bd.dependency 'RangersAppLog/Core'
+    bd.source_files = 'RangersAppLog/Classes/Unique/*.{h,m,c}'
+    bd.public_header_files = 'RangersAppLog/Classes/Unique/*.h'
+    bd.vendored_library = 'RangersAppLog/Classes/Unique/*.a'
+  end
 
-  # s.subspec 'CAID' do |ss|
-  #   ss.vendored_library = 'RangersAppLog/Classes/CAID/*.a'
-  #   ss.dependency 'RangersAppLog/Core'
-  # end
+  s.subspec 'CAID' do |ss|
+    ss.vendored_library = 'RangersAppLog/Classes/CAID/*.a'
+    ss.dependency 'RangersAppLog/Core'
+  end
   
-  # s.subspec 'UITracker' do |bd|
-  #   bd.vendored_library = 'RangersAppLog/Classes/UITracker/*.a'
-  #   bd.source_files = 'RangersAppLog/Classes/UITracker/*.{h,m,c}'
-  #   bd.frameworks = 'Foundation','UIKit','WebKit'
-  #   bd.public_header_files = 'RangersAppLog/Classes/UITracker/*.h'
-  #   bd.dependency 'RangersAppLog/Core'
-  # end
+  s.subspec 'UITracker' do |bd|
+    bd.vendored_library = 'RangersAppLog/Classes/UITracker/*.a'
+    bd.source_files = 'RangersAppLog/Classes/UITracker/*.{h,m,c}'
+    bd.frameworks = 'Foundation','UIKit','WebKit'
+    bd.public_header_files = 'RangersAppLog/Classes/UITracker/*.h'
+    bd.dependency 'RangersAppLog/Core'
+  end
 
-  # s.subspec 'Picker' do |bd|
-  #   bd.vendored_library = 'RangersAppLog/Classes/Picker/*.a'
-  #   bd.frameworks = 'Foundation','UIKit','WebKit','CoreText'
-  #   bd.dependency 'RangersAppLog/Log'
-  #   bd.dependency 'RangersAppLog/UITracker'
-  #   bd.source_files = 'RangersAppLog/Classes/Picker/*.{h,m,c}'
-  #   bd.public_header_files = 'RangersAppLog/Classes/Picker/*.h'
-  # end
+  s.subspec 'Picker' do |bd|
+    bd.vendored_library = 'RangersAppLog/Classes/Picker/*.a'
+    bd.frameworks = 'Foundation','UIKit','WebKit','CoreText'
+    bd.dependency 'RangersAppLog/Log'
+    bd.dependency 'RangersAppLog/UITracker'
+    bd.source_files = 'RangersAppLog/Classes/Picker/*.{h,m,c}'
+    bd.public_header_files = 'RangersAppLog/Classes/Picker/*.h'
+  end
 
 end
